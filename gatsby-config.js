@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Yace.IO`,
-    description: `Personal Musings`,
+    description: `Exploring new horizons`,
     author: `@jrmemon`,
   },
   plugins: [
