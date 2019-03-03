@@ -45,7 +45,11 @@ const IndexPage = props => {
 
 export const query = graphql`
   query PostListQuery($skip: Int!) {
-    allMarkdownRemark(limit: 10, skip: $skip) {
+    allMarkdownRemark(
+      limit: 10
+      skip: $skip
+      sort: { order: DESC, fields: frontmatter___date }
+    ) {
       edges {
         node {
           frontmatter {
