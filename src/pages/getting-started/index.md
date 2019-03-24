@@ -3,6 +3,7 @@ title: "Getting started"
 description: A brief summary of whats next
 date: "2019-03-03 15:00"
 image: ""
+tag: "tech"
 ---
 
 ## Flashback

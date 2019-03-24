@@ -12,14 +12,10 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import styled from "@emotion/styled"
+import CenteredLayout from "./CenteredLayout"
 
 const Content = styled.main`
   min-height: 77vh;
-`
-const CenteredLayout = styled.div`
-  max-width: 31rem;
-  margin-right: auto;
-  margin-left: auto;
 `
 
 const Layout = ({ children }) => (
@@ -40,7 +36,6 @@ const Layout = ({ children }) => (
           <div
             style={{
               margin: `0 auto`,
-              padding: `0px 1.0875rem 1.45rem`,
               paddingTop: 0,
             }}
           >

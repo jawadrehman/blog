@@ -6,6 +6,8 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import Color from "../constants/color"
 import profilepic from "../images/profile-pic.jpg"
+import TagsList from "./TagsList"
+import CenteredLayout from "./CenteredLayout"
 
 const ProfileImage = styled.img`
   border-radius: 50%;
@@ -28,32 +30,32 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        display: "flex",
-        margin: `0 auto`,
-        maxWidth: "31rem",
-        padding: `0.80rem 1.0875rem`,
-        marginRight: "auto",
-        marginLeft: "auto",
-        alignItems: "center",
-      }}
-    >
-      <h1 style={{ margin: 0, flex: 1 }}>
-        <Link
-          to="/"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <ProfileImageContainer>
-        <ProfileImage src={profilepic} alt="Profile Picture" />
-        <h5>Jawad Rehman</h5>
-      </ProfileImageContainer>
-    </div>
+    <CenteredLayout>
+      <div
+        style={{
+          display: "flex",
+          margin: `0 auto`,
+          alignItems: "center",
+          paddingTop: "1.1rem",
+        }}
+      >
+        <h1 style={{ margin: 0, flex: 1 }}>
+          <Link
+            to="/"
+            style={{
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
+        <ProfileImageContainer>
+          <ProfileImage src={profilepic} alt="Profile Picture" />
+          <h5>Jawad Rehman</h5>
+        </ProfileImageContainer>
+      </div>
+      {/* <TagsList /> */}
+    </CenteredLayout>
   </header>
 )
 

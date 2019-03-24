@@ -3,6 +3,7 @@ title: "Overcoming the initial anxiety when starting to code"
 description: Can I code
 date: "2019-03-03 19:30"
 image: ""
+tag: "tech"
 ---
 
 ## Is my computer broken ?
