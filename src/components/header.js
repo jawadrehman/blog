@@ -3,10 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
-import Color from "../constants/color"
 import profilepic from "../images/profile-pic.jpg"
-import TagsList from "./TagsList"
 import CenteredLayout from "./CenteredLayout"
 
 const ProfileImage = styled.img`
